@@ -11,7 +11,7 @@ OKD_MIRROR?=https://github.com/okd-project/okd/releases/download
 DEPLOYMENT_TYPE?=okd
 
 # fixed release version
-OPENSHIFT_RELEASE?=none
+OPENSHIFT_RELEASE?=4.14.0-0.okd-2023-12-01-225814
 
 # image name
 CONTAINER_NAME?=quay.io/slauger/hcloud-okd4

@@ -1,6 +1,6 @@
 {
   "variables": {
-    "location": "nbg1",
+    "location": "hel",
     "server_type": "cx31",
     "snapshot_prefix": "rhcos",
     "image_type": "generic",
@@ -9,7 +9,7 @@
   "builders": [
     {
       "type": "hcloud",
-      "image": "ubuntu-18.04",
+      "image": "ubuntu-22.04",
       "location": "{{user `location`}}",
       "server_type": "{{user `server_type`}}",
       "ssh_username": "root",

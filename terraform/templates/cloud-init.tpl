@@ -17,7 +17,7 @@ write_files:
          AcceptEnv LC_*
          Banner none
          ChallengeResponseAuthentication no
-         Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr
+         Ciphers aes256-gcm@openssh.com,aes128-gcm@openssh.com
          #ClientAliveCountMax 0
          #ClientAliveInterval 900
          Compression no
@@ -25,9 +25,9 @@ write_files:
          HostKey /etc/ssh/ssh_host_ed25519_key
          HostbasedAuthentication no
          IgnoreRhosts yes
-         KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512
+         KexAlgorithms curve25519-sha256@libssh.org,ecdh-sha2-nistp384,ecdh-sha2-nistp521 
          LogLevel VERBOSE
-         MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com
+         MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com
          MaxAuthTries 2
          MaxSessions 10
          MaxStartups 10:30:100

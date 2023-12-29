@@ -56,7 +56,7 @@ variable "keep_disk" {
 variable "location" {
   type        = string
   description = "The location name to create the server in. nbg1, fsn1 or hel1"
-  default     = "nbg1"
+  default     = "hel1"
 }
 
 variable "backups" {
