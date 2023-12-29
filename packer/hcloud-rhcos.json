@@ -1,6 +1,6 @@
 {
   "variables": {
-    "location": "hel",
+    "location": "hel1",
     "server_type": "cx31",
     "snapshot_prefix": "rhcos",
     "image_type": "generic",
